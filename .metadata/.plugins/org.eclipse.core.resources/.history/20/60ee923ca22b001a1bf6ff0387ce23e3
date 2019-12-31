@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>순서가 있는 목록</h1>
+	<ol>
+		<li>자바</li>
+		<li>JDBC</li>
+		<li>오라클</li>
+		<li>HTML5</li>
+		<li>CSS</li>
+		<li>javascript</li>
+		<li>jQuery</li>
+	</ol>
+	<h1>순서가 없는 목록</h1>
+	<ul>
+		<li>servlet&jsp</li>
+		<li>spring</li>
+		<li>hadoop</li>
+		<li>hive</li>
+	</ul>
+	<h1>정의리스트</h1>
+	
+</body>
+</html>

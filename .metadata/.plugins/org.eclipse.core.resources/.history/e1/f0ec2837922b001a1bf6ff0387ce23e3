@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>기본 html연습</title>
+	</head>
+	<body>
+		<!-- html주석 (클라이언트에 전송되는 주석 --이준성-->
+		안녕하세요<br/>
+		김서연입니다.
+		<p>지금은 html의 기본을 연습하는 시간입니다.</p>
+	</body>
+</html>

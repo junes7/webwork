@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="EUC-KR">
+<title>기본 html연습</title>
+</head>
+<body>
+	<h1><b>Welcome to the Head First Lounge</b></h1> <br/>
+	<font size="6" color="black" face="견고"><b>Welcome to the Head First Lounge</b></font> <br/>
+	<img src="/clientweb/images/drinks.gif" alt="주스">
+ 	<p>
+ 	Join us any evening for refreshing elixirs, conversation and maybe a game or two of 
+<i><b>Dance Dance</b> Revolution</i>. Wireless access is always provided;  
+BYOWS (Bring Your Own Web Server).</p>
+
+	<h2><b>Directions</b></h2>
+	<p>You'll find us right in the center of downtown Webville.  Come join us!
+	</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<font size="6" color="blue" face="견고"><b>안녕하세요! <i>LJS</i>&ntsp;페이지입니다.</b></font>
+	</br>
+	</br>
+	<h2><b>좋아하는 동물</b></h2>
+	<img src="/clientweb/images/bear.jpg" alt="곰" width=300 height=300>
+	</br>
+	<hr/>
+	<hr/>
+	<h2>관심있는 분야</h2>
+	<ul>
+		<li>network</li>
+		<li>iot</li>
+		<li>security</li>
+		<li>control system</li>
+	</ul>
+	<h2>취미</h2>
+	<ul>
+		<li>음악듣기</li>
+		<li>ㄷ</li>
+		<li>security</li>
+		<li>control system</li>
+	</ul>
+	
+</body>
+</html>
