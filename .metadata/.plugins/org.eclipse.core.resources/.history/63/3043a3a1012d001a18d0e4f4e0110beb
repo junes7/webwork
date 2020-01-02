@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>테이블연습</h1>
+	<table border="1" width="500">
+	<!--지금 여기서 width와 height를 꾸미는건 쓸모없고 CSS가서 꾸밈작업 하라는 경고가 뜬다.-->
+		<tr bg color="skyblue">
+			<th>번호</th>
+			<th>제목</th>
+			<th>저자</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>이클립스</td>
+			<td>스테파니메이어</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>트와일라잇</td>
+			<td>스테파니메이어</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>감자</td>
+			<td>김동인</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>양식태그 테스트하기</h1>
+	<!--밑에 form 양식에서 action 과 메소드는 매우 중요하다. -->
+	<!--  <form action="" method="get"> -->
+	<!--get방식은 id와 password가 다 url 주소에 묻어가는 방식이라 보안에 약하다.-->
+	<form action="/clientweb/member/login.jsp" method="get">
+		<h2>3. 선택 관련 태그</h2>
+		<h3>좋아하는 과목</h3>
+		<input type="checkbox" name="subject1" value="자바">자바
+		<input type="checkbox" name="subject1" value="JDBC">JDBC
+		<input type="checkbox" name="subject1" value="HTML5">HTML5
+		<input type="checkbox" name="subject1" value="서블릿">서블릿
+		<br/><br/>
+		
+		<h3>좋아하는 과목</h3>
+		<input type="radio" name="subject2" value="자바">자바
+		<input type="radio" name="subject2" value="JDBC">JDBC
+		<input type="radio" name="subject2" value="HTML5">HTML5
+		<input type="radio" name="subject2" value="서블릿">서블릿
+		<br/><br/>
+		
+		<h2>1. 텍스트 관련 태그</h2>
+		아이디:<input type="text" name="id" size="100" maxlength="20"/><br/>
+		패스워드:<input type="password" name="pass"><br/>
+		닉네임:<input type="text" name="nickname" value="별칭을 입력하세요" disabled="disabled"/><br/>
+		비고:<br/>
+		<textarea rows="30" cols="30" name="info">자기소개:</textarea>
+		<h2>2. 버튼 관련 태그</h2>
+		<input type="submit" value="서버로 전송하기">
+		<input type="reset" value="취소하기">
+		<input type="button" value="자바스크립트연결하는버튼"
+			   onclick="alert('환영합니다.')"/>
+	</form>
+</body>
+</html>

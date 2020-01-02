@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1" align="center">
+	<tr>
+		<th colspan=2 align="center">회원가입</th>
+	</tr>
+	<tr>
+		<td>이름</td>
+		<td><input type="text" name="name" maxlength="20"/><br/></td>
+	</tr>
+	<tr>
+		<td>사용자 ID</td>
+		<td><input type="text" name="id" maxlength="20"/><br/></td>
+	</tr>
+	<tr>
+		<td>암호</td>
+		<td><input type="password" name="pass" maxlength="20"/><br/></td>
+	</tr>	
+	<tr>
+		<td>암호확인</td>
+		<td><input type="password" name="pass" maxlength="40"/><br/></td>
+	</tr>	
+	
+	</table>
+</body>
+</html>

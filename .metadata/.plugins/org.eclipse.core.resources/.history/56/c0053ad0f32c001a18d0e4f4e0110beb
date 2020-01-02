@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<font size="6" color="blue" face="견고"><b>안녕하세요! <i>이준성</i>&nbsp;페이지입니다.</b></font>
+	</br>
+	</br>
+	<h2><b>좋아하는 동물</b></h2>
+	<img src="/clientweb/images/bear.jpg" alt="곰" width=300 height=300>
+	</br>
+	<hr/>
+	<hr/>
+	<h2><b>관심있는 분야</b></h2>
+	<ul>
+		<li>네트워크</li>
+		<li>사물 인터넷</li>
+		<li>보안</li>
+		<li>제어 시스템</li>
+	</ul>
+	<hr/>
+	<hr/>
+	<h2><b>취미</b></h2>
+	<ul>
+		<li>음악듣기</li>
+		<li>영화보기</li>
+		<li>운동하기</li>
+	</ul>
+	<hr/>
+	<hr/>
+	<h2><b>기피하는 음료</b></h2>
+	<dl>
+		<dt><b>커피</b></dt>
+		<dd>커피를 마시면 잠을 잘 못 잡니다.</dd>
+		<dt><b>홍초</b></dt>
+		<dd>식초의 신 맛을 좋아하지 않습니다.</dd>
+	</dl>
+	<hr/>
+</body>
+</html>

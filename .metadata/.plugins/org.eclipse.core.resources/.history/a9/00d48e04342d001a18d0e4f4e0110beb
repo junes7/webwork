@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1" align="center">
+	<tr>
+		<th colspan=2 align="center">회원가입</th>
+	</tr>
+	<tr>
+		<tb>이름</tb>
+		<tb><input type="text" name="name" maxlength="20"/></tb>
+	</tr>
+	<tr>
+		<tb>사용자 ID</tb>
+		<tb><input type="text" name="id" maxlength="20"/></tb>
+	</tr>
+	
+	
+	
+	</table>
+</body>
+</html>

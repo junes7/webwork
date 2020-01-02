@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>하이퍼링크 연습</h1>
+	<hr/>
+	<a href="https://www.naver.com/" target="_self">네이버</a>
+	<!--target="_self이 설정이 default 설정인데 원래 있던 페이지를 없애고  여는 것이다.-->
+	<a href="https://www.naver.com/" target="_blank">네이버</a>
+	<br/>
+	<a href="/clientweb/html/lounge.html">html기본연습</a>
+	<a href="lounge.html">html기본연습</a>
+</body>
+</html>
