@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		ul{ 
+			list-style:none;
+			text-align: center;
+			font-size: 20pt;
+			font-weight: bolder;
+		}
+		ul li{
+			display: inline;/* 모든 항목이 한 줄에 보여지도록 설정 */
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Home</li>
+		<li>Product</li>
+		<li>About</li>
+		<li>Board</li>
+	</ul>
+</body>
+</html>

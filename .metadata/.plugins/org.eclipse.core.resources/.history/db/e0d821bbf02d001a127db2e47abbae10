@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+	#mydiv1{
+			position:absolute;
+			top:100px;
+			left:400px;
+			width: 300px;
+			height: 300px;
+			background-color: white;
+			border-color: #58a8d7;
+			border-style: solid;
+			border-width: 30px;
+	}
+	#mydiv2{
+			position:absolute;
+			top:130px;
+			left:280px;
+			width: 130px;
+			height: 130px;
+			background-color: white;
+			border-color: #97dc76;
+			border-style: solid;
+			border-width: 10px;
+	}
+	#mydiv3{
+			position:absolute;
+			top:250px;
+			left:180px;
+			width: 160px;
+			height: 160px;
+			background-color: white;
+			border-color: #ed370c;
+			border-style: solid;
+			border-width: 15px;
+	}
+	#mydiv4{
+			position:absolute;
+			top:390px;
+			left:230px;
+			width: 200px;
+			height: 200px;
+			background-color: white;
+			border-color: #f3df83;
+			border-style: solid;
+			border-width: 20px;
+	}
+	#mydiv5{
+			position:absolute;
+			top:390px;
+			left:230px;
+			border:none;
+			width: 110px;
+			height: 40px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:15px;
+			letter-spacing:-1px
+	}
+	#mydiv6{
+			position:absolute;
+			top:390px;
+			left:230px;
+			border:none;
+			width: 500px;
+			height: 40px;
+			font-family:Arial Black, Helvetica, sans-serif;
+			font-weight:bold;
+			font-size:30px;
+			letter-spacing:-4px
+	}
+	</style>
+</head>
+<body>
+	<div id="mydiv1"></div>
+	<div id="mydiv2"></div>
+	<div id="mydiv3"></div>
+	<div id="mydiv4"></div>
+	<div id="mydiv5"></div>
+	<div id="mydiv6"></div>
+</body>
+</html>

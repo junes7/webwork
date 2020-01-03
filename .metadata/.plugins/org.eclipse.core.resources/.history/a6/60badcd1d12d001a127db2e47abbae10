@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+
+</head>
+<body>
+	<h1>하이펑크에서 사용할 수 있는 pseudo선택자</h1>
+	<a href="http://www.google.com">구글</a>
+	<a href="http://www.kitri.re.kr">kitri</a>
+	<a href="http://data.seoul.go.kr">서울시 데이터센터</a>
+	<a href="http://www.data.go.kr">정부 데이터센터</a>
+</body>
+</html>

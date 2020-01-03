@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		#outer{
+			background-color: yellow;
+			position: absolute;
+			width: 500px;
+			left: 100px;
+			top: 100px;
+			height: 500px;
+		}
+		#jang{
+			background-color: #eaf2d3;
+			width: 100px;
+			position: static;
+			left: 70px;
+			top: 10px;
+		}
+		#lee{
+			background-color: #f0bc2e;
+			width: 100px;
+			position: absolute;/* 기준위치에서 지정된 위치로 이동,
+								   부모위치(#outer)를 기준으로 설정 */
+			left: 70px;
+			top: 10px;
+		}
+		#kim{
+			background-color: #a7cece;
+			width: 100px;
+			position: relative;/*원래 있어야 하는 위치로부터 상대적 위치로 이동*/
+			left: 70px;
+			top: 10px;
+		}
+		#hong{
+			background-color: #a0f090;
+			width: 100px;
+			position: fixed;
+			left: 70px;
+			top: 10px;
+		}
+		#jung{
+			background-color: #a0f090;
+			width: 100px;
+		}
+		#park{
+			background-color: #f0bc2e;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="jang">장동건</div>
+		<div id="kim">김어준</div>
+		<div id="lee">이민호</div>
+		<div id="hong">홍길동</div>
+		<div id="jung">정우성</div>
+		<div id="park">박나래</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		#outer{
+			background-color: yellow;
+			position: absolute;
+			width: 500px;
+			left: 100px;
+			top: 100px;
+			height: 500px;
+		}
+		#jang{
+			background-color: #eaf2d3;
+			width: 100px;
+			position: static;/*원래 기본 흐름대로 보여진다.*/
+			left: 70px;
+			top: 10px;
+		}
+		#lee{
+			background-color: #f0bc2e;
+			width: 100px;
+			position: absolute;/* 기준위치에서 지정된 위치로 이동,
+								   부모위치(#outer)를 기준으로 설정 */
+			left: 70px;
+			top: 10px;
+		}
+		#kim{
+			background-color: #a7cece;
+			width: 100px;
+			position: relative;/*원래 있어야 하는 위치로부터 상대적 위치로 이동*/
+			left: 70px;
+			top: 10px;
+		}
+		#hong{
+			background-color: #a0f090;
+			width: 100px;
+			position: fixed;/*기준위치에서 지정된 위치로 이동
+							-부모의 영향을 받지 않고 고정된 위치로 이동
+							-윈도우기준으로 무조건 지정된 위치에서 보여진다.*/
+			left: 70px;
+			top: 10px;
+		}
+		#jung{
+			background-color: #a0f090;
+			width: 100px;
+			position: absolute;/*absolute는 기준위치에서 지정한 위치로 이동 
+							   -document기준이므로 해상도와 상관없이 무조건 보인다.*/
+			left: 1100px;
+			top:1800;
+		}
+		#park{
+			background-color: #f0bc2e;
+			width: 100px;
+			position: fixed;/*기준위치에서 지정한 위치로 이동
+							 -윈도우 기준이므로 윈도우 해상도를 벗어나면 화면에서 안보인다.
+							 -윈도우 해상도를 벗어나지 않으면 스크롤해도
+							 화면에서 지정한 위치에서 고정된다.*/
+			left: 1100px;
+			top:1800;
+		}
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="jang">장동건</div>
+		<div id="kim">김어준</div>
+		<div id="lee">이민호</div>
+		<div id="hong">홍길동</div>
+		<div id="jung">정우성</div>
+		<div id="park">박나래</div>
+	</div>
+</body>
+</html>

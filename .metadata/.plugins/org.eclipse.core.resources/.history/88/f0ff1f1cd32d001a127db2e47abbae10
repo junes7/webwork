@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<ul>
+		<li>Microsoft Internet Explorer</li>
+		<li>Google Chrome</li>
+		<li>Mozilla FireFox</li>
+	</ul>
+
+	<ul>
+		<li>Microsoft Internet Explorer</li>
+		<li>Google Chrome</li>
+		<li>Mozilla FireFox</li>
+	</ul>
+</body>
+</html>

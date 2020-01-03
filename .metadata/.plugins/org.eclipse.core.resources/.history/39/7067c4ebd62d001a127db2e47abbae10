@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<td>홍길동</td>
+		<td>98</td>
+	</tr>
+	<tr>
+		<td>김철수</td>
+		<td>80</td>
+	</tr>
+</table>
+</body>
+</html>

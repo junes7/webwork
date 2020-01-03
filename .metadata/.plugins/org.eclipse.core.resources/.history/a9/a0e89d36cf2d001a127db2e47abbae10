@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 배경지정하기 -->
+	<p>그림자 효과주기 정말 멋져....</p>
+	<h1 class="op10">투명도 1</h1>
+	<h1 class="op06">투명도 0.6</h1>
+	<h1 class="op02">투명도 0.2</h1>
+
+<p><img src="../images/jang1.jpg" class="op10"></img></p>
+<p><img src="../images/jang1.jpg" class="op06"></img></p>
+<p><img src="../images/jang1.jpg" class="op02"></img></p>
+
+	<p style="font-size: xx-small;">font-size xx-small</p>
+	<p style="font-size: x-small;">font-size x-small</p>
+	<p style="font-size: small;">font-size small</p>
+	<p style="font-size: medium;">font-size medium</p>
+	<p style="font-size: large;">font-size large</p>
+	<p style="font-size: x-large;">font-size x-large</p>
+	<p style="font-size: xx-large;">font-size xx-large</p>
+	<p style="font-size: larger;">font-size larger</p>
+	<p style="font-size: samller;">font-size samller</p>
+	<p style="font-size: 12px;">font-size 12px</p>
+	<p style="font-size: 150%;">font-size 150%</p>
+	<p style="font-style: normal;">Font style - normal</p>
+	<p style="font-style: italic;">Font style - italic</p>
+	<p style="font-style: oblique;">Font style - oblique</p>
+
+	<p style="font-weight: normal;">font-weight normal</p>
+	<p style="font-weight: bold;">font-weight bold</p>
+	<p style="font-weight: bolder;">font-weight bolder</p>
+	<p style="font-weight: lighter;">font-weight lighter</p>
+	<p style="font-weight: 100;">font-weight 100</p>
+	<p style="font-weight: 200;">font-weight 200</p>
+	<p style="font-weight: 300;">font-weight 300</p>
+	<p style="font-weight: 400;">font-weight 400</p>
+	<p style="font-weight: 500;">font-weight 500</p>
+	<p style="font-weight: 600;">font-weight 600</p>
+	<p style="font-weight: 700;">font-weight 700</p>
+	<p style="font-weight: 800;">font-weight 800</p>
+	<p style="font-weight: 900;">font-weight 900</p>
+
+	<p>기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 이를 보완하기 위해 만들어진
+		것이 스타일 시트이고 스타일 시트의 표준안이 바로 CSS 이다. 간단히 스타일시트라고도 한다.</p>
+	<p>기존의 HTML은 웹 문서를
+		다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의
+		표준안이 바로 CSS 이다. 간단히 스타일시트라고도 한다.</p>
+	<p>기존의 HTML은 웹 문서를
+		다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의
+		표준안이 바로 CSS 이다. 간단히 스타일시트라고도 한다.</p>
+
+
+</body>
+</html>
