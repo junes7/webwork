@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+	<title>Insert title here</title>
+	<style type="text/css">
+		#header{
+			background-color: #ff0000;
+		}
+		#sidebar1{
+			float:left;
+			background-color: #a52a2a;
+			width:20%
+		}
+		#sidebar2{
+			float:right;
+			background-color: #008000;
+			width:20%
+		}
+		#content{
+			background-color: #808080;
+			text-align: justify;
+			float: left;
+			width:60%
+		}
+		#footer{
+			background-color: #800080;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="outer">
+			<div id="header">
+			<h1>Header</h1>
+			</div>
+			
+			<div id="sidebar1">	
+			<h2>Sidebar1</h2>
+			<ul>
+				<li>Sidebar1 Menu</li>
+				<li>Sidebar1 Menu</li>
+				<li>Sidebar1 Menu</li>
+				<li>Sidebar1 Menu</li>
+			</ul>
+			</div>
+			
+			<div id="content">
+			<h2>Content</h2>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			</div>
+			
+			<div id="sidebar2">		
+			<h2>Sidebar2</h2>
+			<ul>
+				<li>Sidebar2 Menu</li>
+				<li>Sidebar2 Menu</li>
+				<li>Sidebar2 Menu</li>
+				<li>Sidebar2 Menu</li>
+			</ul>
+			</div>
+			
+			<div id="footer">	
+			<h2>Footer</h2>
+			</div>		
+	</div>
+</body>
+</html>

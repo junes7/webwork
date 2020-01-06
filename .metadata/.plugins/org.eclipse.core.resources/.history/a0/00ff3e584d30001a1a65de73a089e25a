@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h1>HRM System</h1>
+		<div>
+			<div>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">부서관리</a></li>
+					<li><a href="#">인사관리</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		#image1{
+			width=400px;
+			height=300px;
+		}
+	
+	
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>양력은 어떻게 비행기를 띄우는가?</h1>
+		<div>
+			<img id="image1" src="../images/Plane Lift.png" alt="plane lift">
+			<p>
+	비행기 날개의 단면을 나타낸 그림이다. 날개에는 4가지 힘이 작용하게 되는데 바로 추력(thrust), 항력(drag), 중력(gravity), 양력(lift)이다.
+	추력은 비행기의 엔진으로부터 발생되는, 비행기를 앞으로 전진시키는 힘이다. 추력에 의해 비행기는 앞으로 전진할 수 있다. 항력은 공기와의 마찰 등에 의해 비행기가 전진하는 것을 방해하는, 
+	추력 반대방향의 힘이다. 그리고 중력은 비행기의 질량에 의해 지구가 아래로 끌어당기는 힘이다. 이 세가지 힘만으로는 비행기는 땅에서 벗어날 수 없다. 비행기를 하늘로 띄우는 힘, 
+	바로 위쪽으로 작용하는 양력이 필요하다.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		#mydiv01 {
+			border: solid 1px black;
+			background-color: fuchsia;
+			width: 300px;
+			float left;
+		}
+		#mydiv02 {
+			border: solid 1px black;
+			background-color: aqua;
+			width: 300px;
+			float left;
+		}
+		#mydiv03 {
+			border: solid 1px black;
+			background-color: green;
+			width: 300px;
+			float left;		
+		}
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="mydiv01">플로트는 문서의 흐름을 제어하는 속성이다.</div>
+		<div id="mydiv02">플로트는 문서의 흐름을 제어하는 속성이다.</div>
+		<div id="mydiv03">플로트는 문서의 흐름을 제어하는 속성이다.</div>	
+	</div>
+</body>
+</html>

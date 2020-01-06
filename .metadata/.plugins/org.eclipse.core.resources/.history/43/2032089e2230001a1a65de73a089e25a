@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="outer">
+		<div id="mydiv01">플로트는 문서의 흐름을 제어하는 속성이다.</div>
+		<div id="mydiv02">플로트는 문서의 흐름을 제어하는 속성이다.</div>
+		<div id="mydiv03">플로트는 문서의 흐름을 제어하는 속성이다.</div>	
+	</div>
+</body>
+</html>

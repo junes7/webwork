@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+<title>Insert title here</title>
+<style>
+</style>
+</head>
+<body>
+			<h1>Header</h1>
+	
+			<h2>Sidebar1</h2>
+			<ul>
+				<li>Sidebar1 Menu</li>
+				<li>Sidebar1 Menu</li>
+				<li>Sidebar1 Menu</li>
+				<li>Sidebar1 Menu</li>
+			</ul>
+		
+			<h2>Content</h2>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+			<p>CSS stands for Cascading Style Sheet.</p>
+		
+			<h2>Sidebar2</h2>
+			<ul>
+				<li>Sidebar2 Menu</li>
+				<li>Sidebar2 Menu</li>
+				<li>Sidebar2 Menu</li>
+				<li>Sidebar2 Menu</li>
+			</ul>
+		
+			<h2>Footer</h2>
+		
+
+</body>
+</html>
