@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- 날짜시간과 관련된 자바스크립트 내장객체(Date) -->
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		today = new Date();
+		document.write(today);
+		str = today.getFullYear() + "년";
+		str = str+(today.getMonth()+1)+"월";
+		str = str+today.getDate() + "일";
+		str = str+today.getHours() + "시";
+		str = str+today.getMins() + "분";
+		document.write("<h2>" + str + "</h2>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		num1 = 100;
+		num2 = 200;
+		result = num1+num2;
+		alert(result);
+		myval = 80;
+		if(myval>=90){
+			document.write("<img src='../images/jang1.jpg'/>");
+		}else{
+			document.write("<img src='../images/m_garden07.jpg'/>");
+		}
+	</script>
+</body>
+</html>

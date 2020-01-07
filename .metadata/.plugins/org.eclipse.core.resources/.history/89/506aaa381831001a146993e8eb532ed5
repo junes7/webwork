@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		//자바스크립트에서 전역변수와 지역변수를 구분하여 선언하기(선언위치,var)
+		// => 함수끼리 변수를 공유해서 사용하는 경우 유용
+		//1. 함수 밖에서 변수를 선언하는 경우
+		num1 = 100;
+		function test1(){
+			document.write("test1내부에서 num1의 사용=>"+num1+"<br/>");
+		}
+		function test2(){
+			document.write("test2내부에서 num1의 사용=>"+num1+"<br/>");
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		test1();
+		test2();
+		document.write("body내부에서 num1의 사용=>"+num1+"<br/>");	
+	</script>
+</body>
+</html>
