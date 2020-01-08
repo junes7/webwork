@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//모두 선택 버튼을 누르면 food라는 name으로 정의된 checkbox를 제어
+	function allcheck(){
+		//food라는 이름으로 정의된 checkbox가 여러 개 - 배열로 관리한다.
+		mycheck=document.cbfmt.food;
+		alert(mycheck);
+		alert(mycheck.length);
+		//mydiv=document.getElementById("result");
+		//innerHTML은 문자열 컨텐츠를 추가 - 기존의 컨텐츠를 덮는다.
+		//p, div, span에서 사용
+		document.getElementById("result").innerHTML = 
+			"<h1>결과</h1>";
+	}
+	function printText(){
+		/* 이 value는 getter이다. */
+		myval = cvfmt.test.value;//getter
+		alert(myval);
+	}
+</script>
+</head>
+
+<body>
+		<form name="cbfmt">
+			<label>아이스크림</label> 
+			<input type="checkbox" name="food"
+			 value="아이스크림" id="ice"> 
+				<label>커피</label> <input type="checkbox"	
+				name="food" value="커피" id="coffee">
+				 <label>음료수</label> <input type="checkbox" 
+				 name="food" value="음료수" id="beverage"> 
+				<label>모두체크/해제</label>
+			<input type="checkbox" name="allchk" 
+			id="allchk" onclick="allcheck()"><br>
+			<!-- 여기 위에 있는 데이터들은 배열로 관리해야 한다. -->
+			<input type="button" value="전송" onclick="ckFunc()">
+			<input type="text" name="test" onkeyup="printText()">
+		</form>
+		<div id="result"></div><!-- div는 BOM으로 접근 못한다. DOM으로 접근해야 한다. -->
+</body>
+</html>

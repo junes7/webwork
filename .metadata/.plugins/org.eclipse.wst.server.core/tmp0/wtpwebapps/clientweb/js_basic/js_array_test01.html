@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		myarr = new Array();
+		myarr[0] = "jquery";
+		myarr[1] = "servlet";
+		myarr[2] = "jsp";
+		myarr[3] = "spring";
+		myarr[4] = "tiles";
+		myarr[5] = "mybatis";
+	
+		document.write("<h2>"+myarr[1]+"</h2>");
+		document.write("<h2>"+myarr.length+"</h2>");
+		for (i = 0; i < myarr.length; i++) {
+			doucment.write("<h2>"+myarr[i]+"</h2>");
+		}
+ 		doucment.write("<h2>"+myarr.join(",")+"</h2>")
+		document.write("<h2>"+myarr.reverse()+"</h2>");
+		document.write("<h2>"+myarr.sort()+"</h2>");
+		//배열의 선언과 생성과 초기화를 한 번에 작업
+		myarr2 = new Array(30,21,22,55,100);
+		for (i = 0; i < myarr2.length; i++) {
+			doucment.write("<h2>"+myarr2[i]+"</h2>");
+		}
+		</script>
+</body>
+</html>

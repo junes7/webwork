@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 요일정보: 수요일 -->
+	<script type="text/javascript">
+		//오늘날짜:_____년_____월_____일____요일
+	today=new Date();
+	weekday=["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];//배열을 담을 변수를 선언하는 방법
+	document.write("<h2>"+ today.toLocaleDateString()+" "+weekday[today.getDay()]+"</h2>");
+	//today.toLocaleDateString()은 운영체제에 설정되어 있는 locale정보를 이용하여 날짜 데이터의 년월일 정보를 구성한다.
+	//한국 - ____년____월____일
+	//미국 - ____/____/_____
+	
+	
+	</script>
+</body>
+</html>

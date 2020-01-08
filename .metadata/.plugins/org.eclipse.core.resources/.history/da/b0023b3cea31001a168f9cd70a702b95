@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+	function calText(){
+		myval = myform.quantity.value;
+		result=12900*myval*0.9;
+		document.getElementById("side").innerHTML = result;
+	}
+	</script>
+</head>
+<body>
+	<form action="" name="myform">
+		수량 : <input type="text" name="quantity" onkeyup="calText()">
+		<span id="side"></span>
+	</form>
+</body>
+</html>

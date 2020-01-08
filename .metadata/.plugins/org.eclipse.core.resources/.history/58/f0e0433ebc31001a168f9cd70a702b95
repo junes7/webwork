@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		today=new Date();
+		document.write("<h2>"+today+"</h2>");
+		dday=new Date();
+		dday.setMonth(1);
+		dday.setDate(3);
+		document.write("<h2>"+dday+"</h2>");
+		//날짜데이터의 연산은 milliseconds로 변환하여 연산한다.
+		
+		document.write("<h2>"+((dday-today)/1000/60/60/24)+"</h2>");
+		
+		
+		
+	</script>
+</body>
+</html>

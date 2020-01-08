@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="myform" action="search.jsp">
+		<input type="text" name="data">
+		<input type="button" value="검색"/>
+	</form>
+</body>
+</html>

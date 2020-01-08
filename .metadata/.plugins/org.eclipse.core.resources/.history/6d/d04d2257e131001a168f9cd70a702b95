@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function showTime(){
+			today = new Date();
+			str = today.getHours() + "시";
+			str = today.getMinutes() + "분";
+			str = today.getSeconds() + "초";
+			myform.time.value = str;
+		}
+		function run(){
+			//window.setTimeout("location.href='https://www.naver.com/'",3000);
+			//setTimeout은 지정된 시간이 지나면 딱 한 번만 호출한다.
+			//setInterval은 매 일정한 시간마다 함수를 호출 해온다.
+			//window.setInterval호출문과 변수를 같이 사용하게 되면
+			//실행중인 작업아이디를 변수에 저장하게 되므로 실행중인 작업을 제어하기 편하다.
+			jobid = window.setInterval(showTime,1000);
+		}
+	</script>
+</head>
+<body onload="showTime()">
+	<form name="myform" action="">
+		<input type="text" name="time">
+		<input type="button" value="시작" onclick="run()"/>
+		<input type="button" value="중지"/>
+	</form>
+</body>
+</html>

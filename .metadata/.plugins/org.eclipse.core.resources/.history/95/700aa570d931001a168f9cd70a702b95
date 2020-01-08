@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body bgcolor="skyblue">
+	<form name="mypopup" action="search.jsp">
+		<input type="text" name="data">
+		<input type="button" value="검색"/>
+	</form>
+	<a href="#">서초1동</a><br/>
+	<a href="#">역삼동</a><br/>
+	<a href="#">방배동</a><br/>
+	<a href="#">구로동</a><br/>
+	<a href="#">신림동</a><br/>
+	<a href="#">봉천동</a><br/>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function showTime(){
+			today = new Date();
+			str = str+today.getHours() + "시";
+			str = str+today.getMinutes() + "분";
+			str = str+today.getSeconds() + "초";
+			myform.time.value = str;
+		}
+		function run(){
+			//window.setTimeout("location.href='https://www.naver.com/'",3000);
+			//setTimeout은 딱 한 번만 호출한다.
+			window.setInterval();
+		}
+	</script>
+</head>
+<body onload="showTime()">
+	<form name="myform" action="">
+		<input type="text" name="time">
+		<input type="button" value="시작"/>
+		<input type="button" value="중지"/>
+	</form>
+</body>
+</html>

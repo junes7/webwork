@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		myarr = new Array();
+		myarr[0] = "jquery";
+		myarr[1] = "servlet";
+		myarr[2] = "jsp";
+		myarr[3] = "spring";
+		myarr[3] = "tiles";
+		myarr[3] = "mybatis";
+	
+		document.writ("<h2>"+myarr[1]+"</h2>);
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+</script>
+</head>
+
+<body>
+	<center>
+		<form name="cbfmt">
+			<label>아이스크림</label> 
+			<input type="checkbox" name="food"
+			 value="아이스크림" id="ice"> 
+				<label>커피</label> <input type="checkbox"	
+				name="food" value="커피" id="coffee">
+				 <label>음료수</label> <input type="checkbox" 
+				 name="food" value="음료수" id="beverage"> 
+				<label>모두체크/해제</label>
+			<input type="checkbox" name="allchk" 
+			id="allchk" onclick="allckeck()"><br>
+
+			<input type="button" value="전송" onclick="ckFunc()">
+		</form>
+		<div id="result"></div>
+	</center>
+</body>
+</html>

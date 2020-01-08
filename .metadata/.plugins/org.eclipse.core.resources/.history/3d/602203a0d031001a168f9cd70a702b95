@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		function testConfirm(){
+			result=window.confirm("정말 삭제할거야?");	
+			window.alert(result);
+		}
+	</script>
+</head>
+<body>
+	<button onClick="window.alert('경고창')">경고창</button>
+	<button onClick="testConfirm()">확인창</button>
+	<button onClick="test_number()">숫자처리메서드</button>
+	<button onClick="window.close()">닫기</button>
+	
+	<form action="" name="sds">
+		우편번호 : <input type="text" name="zipcode"	>
+		<input type="button" value="SEARCH ADDRESS" onClick="searchAddress()">
+		<br>
+		
+		상세주소 : <input type="text" name="address"><br>
+		<input type="submit" value="SEND">
+	</form>
+</body>
+</html>
