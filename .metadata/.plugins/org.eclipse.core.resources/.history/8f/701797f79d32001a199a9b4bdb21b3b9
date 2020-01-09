@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		
+	
+	
+	</script>
+</head>
+<body>
+	<h1>티몬 회원가입</h1>
+	<h2>필수항목</h2>
+	<form action="" name="myform">
+	아이디 : <input type="text" name="id" onkeyup="">
+		<div id="newline" style="color: red;" >
+	</div>
+	</form>
+</body>
+</html>

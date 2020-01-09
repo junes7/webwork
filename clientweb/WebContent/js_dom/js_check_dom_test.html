@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function allcheck(){
+		//food라는 이름으로 정의된 체크박스를 mycheck 저장
+		mycheck = document.cbfmt.food//food라는 이름으로 정의된 체크박스
+		                             //가 여러개(배열)
+		//alert(mycheck.length)
+		//allchk라는 이름으로 정의된 체크박스의 선택값을 가져오기
+		//===> 체크박스를 선택하면  true가 리턴되고 체크해제하면 false리턴
+		allchk_val = document.cbfmt.allchk.checked
+		//alert(allchk_val)
+		for(i=0;i<mycheck.length;i++){
+			//alert(mycheck[i])
+			//food라는 이름의 모든 체크박스에 allchk_val와 동일한 값을 셋팅
+			mycheck[i].checked = allchk_val
+		}
+	}
+	function ckFunc(){
+		mycheck = document.cbfmt.food
+		checkVal = "";
+		for(i=0;i<mycheck.length;i++){
+			if(mycheck[i].checked){
+				checkVal=checkVal+mycheck[i].value
+			}
+		}
+		//여기에 dom을 적용해보세요	
+	}	
+
+</script>
+</head>
+<body>
+	<center>
+		<form name="cbfmt">
+			<label>아이스크림</label> 
+			<input type="checkbox" name="food"
+			 value="아이스크림" id="ice" > 
+				<label>커피</label> <input type="checkbox"	
+				name="food" value="커피" id="coffee">
+				 <label>음료수</label> <input type="checkbox" 
+				 name="food" value="음료수" id="beverage"> 
+		
+				<label>모두체크/해제</label>
+			<input type="checkbox" name="allchk" 
+			id="allchk" onclick="allcheck()">
+			
+			<label>배경색변경하기</label>
+			<input type="checkbox" name="bgchk" 
+			id="bgchk" onclick="checktest()"><br>
+			
+			<input type="button" value="전송" onclick="ckFunc()">
+		</form>
+		<div id="result"></div>
+	</center>
+</body>
+</html>

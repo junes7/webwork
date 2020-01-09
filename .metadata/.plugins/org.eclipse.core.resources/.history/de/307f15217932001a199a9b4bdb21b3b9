@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		//window.confirm, window.alert
+		function testConfirm(){
+			result=window.confirm("정말 삭제할거야?");	
+			//window.alert(result);
+			if(result){
+				alert("실제 db에서 삭제수행하기");
+			}else{
+				alert("삭제취소");
+			}
+		}
+		//window.open window.close
+		function searchAddress(){
+			mypopup = window.open("js_popup.html","mywin","width=300,height=300,top=100,toolbar=yes");
+		}
+		function idcheck(){
+			mypopup2 = window.open("js_popup.html","mywin","width=300,height=300,top=100,toolbar=yes");
+			//alert(window.document.myform.id.value);
+			//mypopup2는 팝업창
+			//opener의 id에 입력한 값을 팝업의 data로 넘긴다.
+			//mypopup2.document.mypopup.data.value= myform.id.value;
+		}
+		//팝업창을 열어주는 것을 오프너라고 부른다.
+		function test_number(){
+/* 			num1 = myform.num1.value; //value속성이 = 오른쪽 : getter
+			num2 = myform.num2.value; */
+			//d
+			num1 = window.parseInt(myform.num1.value); //value속성이 = 오른쪽 : getter
+			num2 = parseInt(myform.num2.value);
+			myform.result.value = num1+num2;//value속성이 = 왼쪽 : setter
+		}
+		function test_number2(){
+			alert("isNaN의 결과=>"+window.isNaN(myform.num1.value));
+			alert("eval의 결과=>"+eval(myform.num1.value));
+			data = myform.num1.value;
+			alert("문자열의 길이=>"+data.length);
+		}	
+		
+	</script>
+</head>
+<body>
+	<button onClick="window.alert('경고창')">경고창</button>
+	<button onClick="testConfirm()">확인창</button>
+	<button onClick="test_number()">숫자처리메서드</button>
+	<button onClick="test_number2()">숫자처리메서드2</button>
+	<button onClick="window.close()">닫기</button>
+	
+	<form action="" name="myform">
+		아이디 : <input type="text" name="id">
+		<input type="button" value="아이디체크" onClick="idcheck()">
+		<br>
+		우편번호 : <input type="text" name="zipcode"	>
+		<input type="button" value="SEARCH ADDRESS" onClick="searchAddress()">
+		<br>
+		상세주소 : <input type="text" name="address">
+		<input type="button" value="SEARCH ADDRESS" onClick="searchAddress()">
+		<br>
+		num1 : <input type="text" name="num1"><br>		
+		num2 : <input type="text" name="num2"><br>
+		결과 : <input type="text" name="result"><br>
+		<input type="submit" value="SEND">
+	</form>
+</body>
+</html>

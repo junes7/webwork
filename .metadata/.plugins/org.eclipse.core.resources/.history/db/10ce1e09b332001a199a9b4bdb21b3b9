@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//function test()를 myfunc로 정의하겠다 라는 의미이다
+		myfunc(90);
+		myfunc = function test(num){
+			if(num>90){
+				alert("성공");			
+			} else{
+				alert("실패");
+			}
+		}
+	</script>
+</body>
+</html>

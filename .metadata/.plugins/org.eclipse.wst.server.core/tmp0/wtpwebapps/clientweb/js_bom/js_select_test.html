@@ -5,14 +5,24 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 	<script type="text/javascript">
+		function selectTest(){
+			index = selfmt.tel.selectedIndex;
+			alert(index);
+			//<select>태그 내부의 option들은 배열로 관리되며 options로 접근
+			//value는 <option>의 value속성에 설정된 값을 반환
+			//text는 <select>태그를 실행했을 때 보여지는 문자열을 반환
+			alert(selfmt.tel.options[index].value);
+			alert(selfmt.tel.options[index].text);
+		}
 	</script>
 </head>
 <body>
 	<form name="selfmt">
 		<select name="tel" onchange="selectTest()">
+		<!-- 여기서 option은 배열로 관리된다. -->
 			<option value="default">핸드폰식별번호</option>
 			<option value="공일공">010</option>
-			<option value="011">011</option>
+			<option value="공일일">011</option>
 			<option value="016">016</option>
 			<option value="017">017</option>
 			<option value="018">018</option>

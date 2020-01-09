@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>함수의 호이스팅</h1>
+	<script type="text/javascript">
+		test(90);
+		function test(num){
+			if(num>90){
+				alert("성공");			
+			} else{
+				alert("실패");
+			}
+		}
+	</script>
+</body>
+</html>

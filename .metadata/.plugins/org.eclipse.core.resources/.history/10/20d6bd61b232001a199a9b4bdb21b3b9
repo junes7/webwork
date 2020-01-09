@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		myfunc = function test(num){
+			if(num>90){
+				alert("성공");			
+			} else{
+				alert("실패");
+			}
+		}
+	</script>
+</body>
+</html>

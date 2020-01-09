@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 1. 전체 체크를 선택하면 모든 항목이 체크 해제
+	 2. 전체 체크가 되면 수량과 판매가를 계산해서 구매 예정가에 출력
+	 3. 각각의 체크를 선택/해제했을 때 구매예정가가 변경되도록
+	 4. totalPrice 출력하기 -->
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		//1.전체 체크를 선택하면 모든 항목이 체크 해제
+		price=""
+		quantity=""
+		result=""
+		mydiv=""
+		function allcheck(){
+			mycheck=document.myform.prd;
+			allchkval=myform.allchk.checked;
+			for(i=0;i<mycheck.length;i++){
+				mycheck[i].checked=allchkval;
+			}
+		}
+		//2. 전체 체크가 되면 수량과 판매가를 계산해서 구매 예정가에 출력
+		function calcpri1(){
+			total=""
+			mycheck=document.myform.prd;
+			for(i=0;i<mycheck.length;i++){
+				price=parseInt(myform.price[i].value);
+				quantity=parseInt(myform.count[i].value);
+				if(myform.prd[i].checked){
+				result=price*quantity;
+				//alert(result);
+				mydiv = document.getElementsByClassName("calcprice")[i];
+				mydiv.innerHTML=result;
+				}
+				total=result;
+			}
+			mytotal=document.getElementById("totalprice")
+			mytotal.innerHTML=total;
+		}
+		
+	
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<table border="1" width="800">
+			<tr>
+				<td><input type="checkbox" name="allchk" 
+				id="allchk" onclick="allcheck();calcpri1()"/>항목명</td>
+				<td>상품정보</td>
+				<td>수량</td>
+				<td>판매가</td>
+				<td>구매예정가</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="prd" onclick="calcpri1()"/>완도미역</td>
+				<td><img src="../images/pro1.jpg"/></td>
+				<td><input type="number" name="count" value="1" onclick="calcpri1()"/></td>
+				<td>
+				<input type="text" name="price" value="6900" /><span>원</span></td>
+				<td><span class="calcprice"></span><span>원</span></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="prd" onclick="calcpri1()"/>스카트 빨아쓰는 휴지</td>
+				<td><img src="../images/pro2.jpg"/></td>
+				<td><input type="number" name="count" value="1" onclick="calcpri1()"/></td>
+				<td><input type="text" name="price" value="7800"/><span>원</span></td>
+				<td><span class="calcprice"></span><span>원</span></td>
+			</tr>
+			<tr>
+			<!-- 총 금액이 출력되는 레코드이다. document.getElementById를 이용해 출력할 것-->
+				<td colspan="6" align="right"><span id="totalprice"></span><span>원</span></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

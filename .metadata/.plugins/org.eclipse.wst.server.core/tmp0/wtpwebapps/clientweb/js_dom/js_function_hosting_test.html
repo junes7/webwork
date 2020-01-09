@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>함수의 호이스팅</h1>
+	<p>
+		자바스크립트는 다른 스크립트 명령문보다 함수선언문을 먼저 읽는다.
+		함수와 변수 등 Global영역에 추가해야 하는 것들을 먼저 추가하고 다른 스크립트
+		명령문을 읽기 때문에 아래와 같이 작업해도 오류가 발생하지 않는다.
+		이를 함수의 호이스팅이라 한다.
+		함수가 선언되기 전에 호출하는 명령문을 정의하는 것은 코드를 엉성하게 만들고 함수의
+		선언문이 많아지게 되면 이를 읽어서 글로벌영역에 추가되는 시간이 소요되므로
+		웹 페이지를 response할 시간이 늦어지므로 권하지 않는다.
+	</p>
+	<script type="text/javascript">
+		test(90);
+		function test(num){
+			if(num>90){
+				alert("성공");			
+			} else{
+				alert("실패");
+			}
+		}
+	</script>
+</body>
+</html>

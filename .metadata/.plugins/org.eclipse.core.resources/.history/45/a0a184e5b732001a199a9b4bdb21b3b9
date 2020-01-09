@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<input type="button" value="1번버튼"/>
+		<input type="button" value="2번버튼"/>
+		<input type="button" value="3번버튼"/>
+		<input type="button" value="4번버튼"/>
+	</form>
+</body>
+</html>

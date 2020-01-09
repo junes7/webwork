@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		
+		
+		
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<input type="text" name="num1">
+		<input type="text" name="num2">
+		<input type="button" value="전송1">
+	</form>
+	<img alt="" src="/clientweb/images/ses_g1.jpg" name="myimg"
+			onmouseover="myimg.src='/clientweb/images/ses_g2.jpg'"
+			onmouseout="myimg.src='/clientweb/images/ses_g1.jpg'"/>
+	<!-- onmouseover: 마우스 커서가 그림 위에 있을 때 
+		onmouseout: 마우스 커서가 그림 밖에 있을 때 -->
+</body>
+</html>

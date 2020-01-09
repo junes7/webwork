@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function idcheck(){
+			myid=myform.id.value;
+			alert(myid.length);
+			
+			/* if(myid.length<4) */
+			mymsg=document.getElementById("newline");
+			mymsg.innerHTML=myid;
+			
+		}
+
+	</script>
+</head>
+<body>
+	<h1>티몬 회원가입</h1>
+	<h2>필수항목</h2>
+	<form name="myform">
+	아이디 : <input type="text" name="id" on="idcheck()">
+		<div id="newline" style="color: red;">
+	</div>
+	</form>
+</body>
+</html>

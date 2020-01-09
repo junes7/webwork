@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="EUC-KR" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font: 14px 굴림체;
+	text-align: center;
+}
+.main {
+  margin-top:15px;
+  width:700px;
+}
+div.heading {
+	font: 20px HY견고딕;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+div.subheading {
+	font: 15px HY견고딕;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.img {
+	float: left;
+	width: 350px;
+	
+}
+
+div.field {
+  
+  margin-bottom:5px;
+  text-align:right;
+}
+form{
+padding-left:0px;
+	
+}
+</style>
+
+</head>
+<body>
+	<div class="main">
+		<div class="heading">펜션예약사항</div>
+		<div class="subheading">비수기 세일입니다. 펜션의 모든 방을 10만원에 단, 모든 방은
+			2인용입니다.!!</div>
+		<div class="img">
+			<img src="../images/pension.jpg" width="300" height="300" />
+		</div>
+		<form name="orderform" action="" method="post">
+			<div class="field">
+				객실명: <select name="name" id="name">
+					<option>루비</option>
+					<option>에메랄드</option>
+					<option>사파이어</option>
+					<option>스카이1호</option>
+					<option>별님실</option>
+				</select>
+			</div>
+			<div class="field">
+				바베큐시설이용: 
+				<input type="text" id="bbq" name="bbq" value=""
+					onchange="order()" />
+			</div>
+			<div class="field">
+				이불추가: <input type="text" id="blanket" name="blanket" value=""
+					onchange="order()" />
+			</div>
+			<div class="field">
+				인원수: <input type="text" id="count" name="count" value=""
+					 onchange="order()"/>
+			</div>
+			<div class="field">
+				금액: <input type="text" id="subtotal" name="subtotal" value=""
+					readonly="readonly" />
+			</div>
+			<div class="field">
+				부가세: <input type="text" id="tax" name="tax" value=""
+					readonly="readonly" />
+			</div>
+			<div class="field">
+				총금액: <input type="text" id="total" name="total" value=""
+					readonly="readonly" />
+			</div>
+			<div class="field">
+				<input type="button" value="Place Order" 
+						onclick="exec(this.form)"/>
+			</div>
+	
+	</form>
+	</div>
+</body>
+</html>

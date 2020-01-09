@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title> New Document </title>
+<script type="text/javascript">
+</script>
+</HEAD>
+<BODY>
+<br>
+<br>
+<br>
+<center>
+<h1>계산기 활용 예</h1>
+<form name="myform">
+<table border="1">
+	<tr>
+		<td colspan="4"><input type="text" size="28" name="mytext"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   7   " onclick="button_click('7')"></td>
+		<td><input type="button" value="   8   " onclick="button_click('8')"></td>
+		<td><input type="button" value="   9   " onclick="button_click('9')"></td>
+		<td><input type="button" value="   /   " onclick="button_click('/')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   4   " onclick="button_click('4')"></td>
+		<td><input type="button" value="   5   " onclick="button_click('5')"></td>
+		<td><input type="button" value="   6   " onclick="button_click('6')"></td>
+		<td><input type="button" value="   *   " onclick="button_click('*')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   1   " onclick="button_click('1')"></td>
+		<td><input type="button" value="   2   " onclick="button_click('2')"></td>
+		<td><input type="button" value="   3   " onclick="button_click('3')"></td>
+		<td><input type="button" value="   -   " onclick="button_click('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="   0   " onclick="button_click('0')"></td>
+		<td><input type="button" value="   .    " onclick="button_click('.')"></td>
+		<td><input type="button" value="   +   " onclick="button_click('+')"></td>
+		<td><input type="button" value="   %  " onclick="button_click('%')"></td>
+	</tr>
+	<tr>
+		<td  colspan="2"><input type="button" value="  계산하기  " onclick="compute()"></td>
+		<td  colspan="2"><input type="button" value="   지우기    " onclick="clear_del()"></td>
+	</tr>
+</table>
+</form>
+</center>
+</BODY>
+</HTML>
