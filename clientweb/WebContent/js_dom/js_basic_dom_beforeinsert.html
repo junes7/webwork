@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
-<title>Insert title here</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			document.getElementById("btninsertbefore").onclick=function(){
+				alert("test");
+				//1. 삽입될 노드 생성
+				spanNode = document.createElement("span");
+				textNode = document.createTextNode("삽입될 텍스트");
+				spanNode.appendChild(textNode);
+				//2. 삽입될 위치의 상위노드 구하기
+				parentNode = document.getElementById("myformId");
+				
+				//3. 삽입될 위치의 형제노드를 구하기
+				targetNode = document.getElementById("btndomtest");
+				
+				//4. 노드 추가하기
+				//new element는 spanNode before element는 targetNode
+				
+				parentNode.insertBefore(spanNode, targetNode);
+				
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="main">

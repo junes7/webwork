@@ -12,7 +12,8 @@
 		//alert(mycheck.length)
 		//allchk라는 이름으로 정의된 체크박스의 선택값을 가져오기
 		//===> 체크박스를 선택하면  true가 리턴되고 체크해제하면 false리턴
-		allchk_val = document.cbfmt.allchk.checked
+		//allchk_val = document.cbfmt.allchk.checked
+		allchk_val = cbfmt.allchk.checked
 		//alert(allchk_val)
 		for(i=0;i<mycheck.length;i++){
 			//alert(mycheck[i])
@@ -28,13 +29,22 @@
 				checkVal=checkVal+mycheck[i].value
 			}
 		}
-		//여기에 dom을 적용해보세요	
-	}	
-
+		//여기에 dom을 적용해보세요
+		//1. 노드 생성하기
+		checkTextNode = document.createTextNode(checkVal);
+		parentNode = document.getElementById("result");
+		parentNode.appendChild(checkTextNode);
+		//텍스트 노드를 추가하기 전에 기존에 작업한 하위노드가 있는지 확인하고 제거
+		//제거해야 하는 노드가 동적으로 생성된 노드 하나임로 아래와 같이 작업
+		if(parentNode.childNodes.length!=0){
+			parentNode.appendChild(parentNode.firstChild);
+		}
+		parentNode.appendChild(checkTextNode);		
+	}
 </script>
 </head>
 <body>
-	<center>
+
 		<form name="cbfmt">
 			<label>아이스크림</label> 
 			<input type="checkbox" name="food"
@@ -54,7 +64,6 @@
 			
 			<input type="button" value="전송" onclick="ckFunc()">
 		</form>
-		<div id="result"></div>
-	</center>
+		<div id="result" ></div>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../common/css/my_style.css"/>
+
+</head>
+<body>
+	<div id="clickMe">여기를 누르세요.</div>
+	<div id="picframe">
+		<img alt="" src="../images/m_garden01.jpg"/>
+	</div>
+	<script type="text/javascript">
+		//페이지가 로딩되고 dom객체가 형성이 되면 익명의 함수를 실행하겠습니다.
+		$(document).ready(function() {
+		//document.window.onload = function() {
+			//alert("jQuery시작............")	
+			//clickMe로 id가 정의된 객체가 클릭되면 익명의 함수를 사용
+			//click이 되었을 때 아래의 function을 실행하겠다는 의미이다.
+			//
+			$("#clickMe").click(function() {
+
+			})
+			
+		})
+	
+	</script>
+</body>
+</html>
