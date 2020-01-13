@@ -15,6 +15,7 @@
 	<p>jQuery 연습중...</p>
 	<div id="result"></div>
 	<div id="result2"></div>
+	<div id="result3">test진행</div>
 	<form>
 		<input type="number" id="data"/>
 		<input type="number" id="data2"/>
@@ -23,7 +24,23 @@
 	<script type="text/javascript">
 		//DOM노드 액세스
 		$(document).ready(function(){
-			
+			$("p").hide();
+			//웹페이지에 값을 출력하기 - setter, html태그가 실행되지 않는다.
+			$("#result").text("<h1>div태그 내부에 텍스트를 추가하기</h1>");
+			//웹페이지에 값을 출력하기 - setter. html태그가 실행된다.
+			$("#result2").html("<h1>div태그 내부에 텍스트를 추가하기</h1>");
+			//
+			$("#data").on("keyup",function(){
+				//val() - 입력필드의 값을 반환:getter
+				myval = parseInt($("#data").val())+100000;
+				$("#result3").text(myval);//웹페이지에 출력 - setter
+			});
+			$("#btn").on("click",function(){
+				//웹페이지에 출력된 값을 읽어오기 - div태그 내부의 문자열 읽기(getter)
+				textVal = $("#result3").text();
+				//입력필드에 값을 출력한다. - setter
+				$("#data2").val(textVal);
+			});
 		});
 	</script>
 </body>

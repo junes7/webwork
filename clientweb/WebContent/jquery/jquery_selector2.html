@@ -4,6 +4,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+
 </head>
 <body>
 	<div id="btns">
@@ -66,10 +67,34 @@
 	<a href="#" target="_self">하이퍼링크2</a>
 	<a href="#" target="_blank">하이퍼링크3</a>
 	<a href="#" target="_self">하이퍼링크4</a>
-	<script type="text/javascript" src="../common/js/jquery-1.12.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			
+			$("#ultag").on("click", function() {
+				$("ul li:first").css("color","red");
+			});
+			$("#ulAll").on("click", function() {
+				$("ul li:first-child").css("color","blue");
+			});
+			$("#href").on("click", function() {
+				$("[href]").css("color","skyblue");
+			});
+			$("#attrVal").on("click", function() {//target=_blank인 것만 변경하겠다는 의미이다.
+				/* $("[target='_blank']").css("color","yellow"); */
+				$("a[target!='_blank']").css("color","pink");
+			});
+/* 			$("#attrVal").on("click", function() {//target=_blank인 것만 변경하겠다는 의미이다.
+				$("[target='_self']").css("color","fuchsia");
+			}); */
+			$("#inputbutton").on("click", function() {
+				$(":button").css("color","green");
+			});
+			$("#treven").on("click", function() {
+				$("tr:even").css("background-color","yellow");
+			});
+			$("#trodd").on("click", function() {
+				$("tr:odd").css("background-color","lime");
+			});
 		});
 	</script>
 </body>

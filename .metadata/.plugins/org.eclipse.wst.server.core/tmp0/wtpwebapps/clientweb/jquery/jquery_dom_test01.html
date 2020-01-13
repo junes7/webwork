@@ -3,10 +3,34 @@
 <head>
 <meta charset="EUC-KR" />
 <title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 </script>
 <script type="text/javascript">
-
+	//jQuery객체로 액세스 하겠다는 말이다.
+	//data = $("<p>dom액세스하는 방법</p>");
+	$(document).ready(function(){
+		$("#append").on("click",function(){
+			$("#btns").append(data);
+		});
+		$("#prepend").on("click",function(){
+			$("#btns").prepend(data);
+		});
+		$("#after").on("click",function(){
+			$("#btns").after(data);
+		});
+		$("#before").on("click",function(){
+			$("#btns").before(data);
+		});
+		$("#remove").on("click",function(){
+			//선택된 노드와 그 하위노드를 모두 제거
+			//특정객체를 지우려면 선택자를 remove안에 정의
+			$("#btns").remove();
+		});
+		$("#empty").on("click",function(){
+			//선택된 노드의 하위노드만 제거
+			$("#btns").empty();
+		});
+	});
 </script>
 </head>
 <body>

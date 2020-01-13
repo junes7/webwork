@@ -2,7 +2,9 @@
 
 <html>
 	<head>
-		<title>jquery</title> 
+		<title>jquery</title>
+		<link rel="stylesheet" href="../common/css/my_style2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head> 
 	<body>
 		<div id="header">
@@ -16,7 +18,15 @@
 		</div>
 		
 		<script>
-		
+			$(document).ready(function(){
+				//mycontent = $("<p>방문자수:</p>"); //밖에서 방문자수 글자 한 번만 생성
+				$(".gardenimg").on("mouseover", function() {
+					$(".gardenimg p").remove();
+					count = Math.floor((Math.random()*10)+500);
+					mycontent = $("<p>방문자수:"+count+"</p>"); 
+					$(this).append(mycontent);
+				});
+			});
 		</script>
 	</body>
 </html>

@@ -21,8 +21,21 @@
  	</form>
 	<script type="text/javascript">
 		//DOM노드 액세스
+		//동적으로 DOM객체를 만들때 속성을 추가하기
 		$(document).ready(function(){
-			
+			$("#htmlbtn").on("click", function(){
+				$("#result").html("<h2>추가하는 문자열</h2>");
+			});
+			$("#attrbtn").on("click", function(){
+				//속성 한 개를 제어
+				$("#attrtest").attr("href","https://www.naver.com");
+				
+				//속성 여러 개를 제어
+				$("#attrtest2").attr({
+								"href":"https://www.naver.com",
+								"target":"_blank"
+								});//json데이터를 표현하는 방식으로 추가
+			});
 		});
 	</script>
 </body>

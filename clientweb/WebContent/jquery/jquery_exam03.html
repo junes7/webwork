@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		//아이디체크하기 - 4글자 이상 , java면 이미 사용중인 아이디 아니면 사용가능아이디
+		//출력하기 - jQuery로 변경하기
+
+/* 		function idcheck(){
+			myid=myform.id.value;
+			mymsg1="4글자 이상의 글자를 입력하세요";
+			mymsg2="이미 사용중인 아이디 입니다.";
+			mymsg3="사용 가능합니다."
+ 			$(document).ready(function(){
+				if(myid.length<4){
+					$("#result").text(mymsg1);
+					
+				} else{
+					if(myid=="java"){
+						$("#result").text(mymsg2);
+					} else{
+						$("#result").text(mymsg3);
+					}
+				}
+			});
+		} */
+			$(document).ready(function(){
+				$("#id").keyup(function(){
+					myId = $("#id").val();
+					resultStr = "";//결과 문자열을 저장할 변수					
+					if(myId.length<4){
+						resultStr = "아이디는 4글자 이상으로 작성해야 합니다."
+					} else{
+						//기존에 존재하는 아이디인지 체크 - Ajax로 처리(DB연동)
+						if(myId=="java"){
+							resultStr = "이미 사용중인 아이디입니다."
+						} else {
+							resultStr = "사용 가능한 아이디입니다."
+						}
+					}
+					//웹페이지에 div태그 내부에 문자열을 추가 - html()을 이용해도 좋다.
+					$("#result").text(resultStr);
+				});
+			});
+	</script>
+</head>
+<body>
+	<h1>티몬 회원가입</h1>
+	<h2>필수항목</h2>
+	<form name="myform">
+		아이디:<input type="text" id="id" />
+	</form>
+	<div id="result" style="color: red;"></div>
+</body>
+</html>
