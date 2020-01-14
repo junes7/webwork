@@ -1,14 +1,10 @@
 package jdbc.member.exam;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import jdbc.board.exam.BoardDTO;
-import jdbc.board.exam.DBUtil;
 
 //DAO(Data Access Object)는 DB 관련 작업만 해 주는 클래스이다.
 //tb_board 테이블을 액세스하는 기능이 정의된 클래스

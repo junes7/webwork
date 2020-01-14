@@ -1,0 +1,31 @@
+@charset "EUC-KR";
+
+#a{
+width: 719px;	
+height: 600px;
+border: 1px solid fuchsia;
+paddin: 5px;
+}
+#b{
+width: 717px;
+height: 400px;
+border: 1px solid fuchsia;
+}
+#c{
+width: 498px;
+height: 388px;
+/* div박스의 위치 조정 
+아래와 같의면 박스를 왼쪽에 
+위치하겠다는 의미이다.*/
+float: left;
+border: 1px solid red;
+margin: 5px;	
+}
+#d{
+width: 198px;
+height: 388px;
+float: right;
+border: 1px solid red;
+margin: 5px 5px 5px 0px;
+	
+}
