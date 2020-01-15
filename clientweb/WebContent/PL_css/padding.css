@@ -1,31 +1,85 @@
 @charset "EUC-KR";
 
 #a{
-width: 719px;	
+width: 800px;	
 height: 600px;
 border: 1px solid fuchsia;
-paddin: 5px;
+padding: 5px;
 }
 #b{
-width: 717px;
-height: 400px;
+width: 790px;
+height: 590px;
 border: 1px solid fuchsia;
 }
 #c{
-width: 498px;
-height: 388px;
+width: 220px;
+height: 580px;
 /* div박스의 위치 조정 
 아래와 같의면 박스를 왼쪽에 
 위치하겠다는 의미이다.*/
 float: left;
+background-color: #9da5e3;
 border: 1px solid red;
 margin: 5px;	
 }
 #d{
-width: 198px;
-height: 388px;
+width: 550px;
+height: 580px;
 float: right;
 border: 1px solid red;
-margin: 5px 5px 5px 0px;
+background-color: #9da5e3;
+border-radius: 80px;
+/* 위 오른쪽 아래 왼쪽 | 시계방향 순으로 적용*/
+margin: 5px 5px 5px 0px	;	
+}
+#e{
+	position: relative;
+	top:45%;
+	left:40%;
+	color: white;
+	font-size: 20pt;
+	font-family: HY견고딕;
+}
+#road{
+	background-color: #bcccea;
+	padding: 10%;
+	position: relative;
+	top:2%;
+	left:12%;
+	width:55%
+}
+
+#search{
+	text-align: center;
+	position: relative;
+	top:5%;
+	left:2%;
+}
+#back{
+	background-color: #bcccea;	
+ 	position: relative;
+	top: 5%;
+	left: 10%;
+	width: 80%;
+	height: 50%;
+}
+/* input.home{
+	background: ("/serverweb/PL_image/Home.jpg") no repeat;
+	border: none;
+	width: 100px;
+	height: 100px;
+} */
+#menu{
+ 	position: relative;
+	top: 20%;
+	left: 10%;
 	
+}
+#adver{
+	text-align: center;
+	padding-top: 5px;
+	background-color: green;
+	position: relative;
+	top:5%;
+	height: 5%;
 }

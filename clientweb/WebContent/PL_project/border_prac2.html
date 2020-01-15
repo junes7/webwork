@@ -4,16 +4,46 @@
 	<meta charset="EUC-KR">
 	<title>Insert title here</title>
 	<!-- external style로 스타일을 적용할 때 -->
-	<link rel="stylesheet" type="text/css" href="padding.css">
+	<link rel="stylesheet" type="text/css" href="../PL_css/padding.css">
 </head>
 <body>
 	<div id="a">
 		<div id="b">
+			
 			<div id="c">
-				본문입니다.
+				<div id="road">
+					<img src="../PL_image/mark.jpg" alt="마크" width="50" height="50"/>
+					길찾기
+				</div><br/>
+				<div id="search">
+					<input type="text" name="search" placeholder="검색하세요" />
+				</div><br/>
+				<div id="back">
+					<div id="menu">	
+							<button type="button" onclick="location.href='https://www.naver.com'">
+								<img src="../PL_image/leggo_logo.png" alt="home" width="100px" height="100px" />
+							</button><br>
+							<!-- <input type="image" name="home" src="../PL_image/leggo_logo.png" 
+							style="height: 100px;" onclick="location.href='https://www.google.com'"/><br/> -->
+							
+							<!-- 클래스로 버튼을 묶어서 스타일이랑 크기 조정해줄 것!! -->
+							<!-- searchload | favorite | parking | last_miles -->
+							<div class="button_gr">
+								<input type="button" class="button" value="길찾기" onclick="location.href='https://www.google.com'" /><br/>
+								<input type="button" class="button" value="즐겨찾기" onclick="location.href='https://www.google.com'" /><br/>
+								<input type="button" class="button" value="P(파킹)" onclick="location.href='https://www.google.com'" /><br/>
+								<input type="button" class="button" value="Last Miles" onclick="location.href='https://www.google.com'" /><br/>
+							</div>
+					</div>
+				</div>
+				<div id="adver">
+					광고
+				</div>
 			</div>
 			<div id="d">
-				사이드바입니다.
+				<div id="e">
+					카카오 지도
+				</div>
 			</div>
 		</div>
 	</div>
