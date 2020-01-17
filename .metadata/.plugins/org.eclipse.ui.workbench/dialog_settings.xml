@@ -21,6 +21,7 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.jst.j2ee.internal"/>
+			<item value="org.eclipse.datatools.sql"/>
 			<item value="org.eclipse.wst.web.ui"/>
 			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>

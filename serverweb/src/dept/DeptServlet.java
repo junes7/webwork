@@ -28,10 +28,11 @@ public class DeptServlet extends HttpServlet {
 		System.out.println("부서위치=>"+loc);
 		System.out.println("전화번호=>"+tel);
 		System.out.println("관리자=>"+mgr);*/
+		//2.비지니스 메소드 call
 		DeptDTO dept1 = new DeptDTO(deptNo,deptName,loc,tel,mgr);
 		DeptDAO dao = new DeptDAOImpl();
 		result = dao.insert(dept1); 
-		
+	/*	//3. 응답메시지 생성
 		dept.print("<html>");
 		dept.print("<body>");
 		//위 두개는 생략해도 무관하다.
@@ -39,8 +40,8 @@ public class DeptServlet extends HttpServlet {
 		dept.print("<hr/>");
 		dept.print("<h3>"+result+"개 부서등록 성공</h3>");
 		dept.print("</body>");
-		dept.print("</html>");
-		
-		
+		dept.print("</html>");*/
+		//3. 응답화면으로 요청재지정
+		response.sendRedirect("/serverweb/dept/insertResult.html");	
 	}
 }
