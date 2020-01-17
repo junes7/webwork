@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,9 +23,15 @@ public class ListServlet extends HttpServlet {
 	//2.비지니스메소드 호출
 	DeptDAO dao = new DeptDAOImpl();
 	ArrayList<DeptDTO> deptlist = dao.getDeptList();
-	int size = deptlist.size();
+	//데이터 공유
+	request.setAttribute("deptlist", deptlist);
+	System.out.println("ListServlet실행완료");	
+	//2. 요청재지정 
+	RequestDispatcher rd = request.getRequestDispatcher("/dept/list.jsp");
+	rd.forward(request, response);
+	
 	//3.응답메시지 생성
-	list.print("<html>");
+/*	list.print("<html>");
 	list.print("<body>");
 	//위 두개는 생략해도 무관하다.
 	list.print("<h1 align='center'>부서 목록 출력</h1>");
@@ -48,7 +55,7 @@ public class ListServlet extends HttpServlet {
 	}
 	list.print("</table>");
 	list.print("</body>");
-	list.print("</html>");	
+	list.print("</html>");	*/
 	
 	}
 }

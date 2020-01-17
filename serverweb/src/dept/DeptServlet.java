@@ -3,6 +3,7 @@ package dept;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,19 +30,15 @@ public class DeptServlet extends HttpServlet {
 		System.out.println("전화번호=>"+tel);
 		System.out.println("관리자=>"+mgr);*/
 		//2.비지니스 메소드 call
-		DeptDTO dept1 = new DeptDTO(deptNo,deptName,loc,tel,mgr);
 		DeptDAO dao = new DeptDAOImpl();
+		DeptDTO dept1 = new DeptDTO(deptNo,deptName,loc,tel,mgr);
 		result = dao.insert(dept1); 
-	/*	//3. 응답메시지 생성
-		dept.print("<html>");
-		dept.print("<body>");
-		//위 두개는 생략해도 무관하다.
-		dept.print("<h1>부서정보</h1>");
-		dept.print("<hr/>");
-		dept.print("<h3>"+result+"개 부서등록 성공</h3>");
-		dept.print("</body>");
-		dept.print("</html>");*/
-		//3. 응답화면으로 요청재지정
-		response.sendRedirect("/serverweb/dept/insertResult.html");	
+		
+		//3. 데이터 공유
+	    request.setAttribute("insertresult", result);
+	 	
+		//4. 응답화면으로 요청 재지정
+		RequestDispatcher rd = request.getRequestDispatcher("/dept/insertResult.jsp");
+		rd.forward(request, response);
 	}
 }
