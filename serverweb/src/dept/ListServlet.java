@@ -27,9 +27,10 @@ public class ListServlet extends HttpServlet {
 	request.setAttribute("deptlist", deptlist);
 	System.out.println("ListServlet실행완료");	
 	//2. 요청재지정 
-	RequestDispatcher rd = request.getRequestDispatcher("/dept/list.jsp");
+	RequestDispatcher rd = 
+		request.getRequestDispatcher("/dept/list.jsp");
 	rd.forward(request, response);
-	
+	System.out.println("dao=>"+deptlist.size());
 	//3.응답메시지 생성
 /*	list.print("<html>");
 	list.print("<body>");

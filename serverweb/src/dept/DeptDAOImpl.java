@@ -92,4 +92,42 @@ public class DeptDAOImpl implements DeptDAO {
 		
 		return result;
 	}
+	@Override
+	public DeptDTO read(String deptno) {
+		System.out.println("dao의 read호출");
+		DeptDTO dept = null;
+		//클래스 참조변수 선언
+		Connection con=null;
+		PreparedStatement ptmt=null;
+		ResultSet rs = null;
+		StringBuffer sql = new StringBuffer();
+		sql.append("select * from MYDEPT where deptno=?");
+		try {
+			//1.preparedStatement객체 생성하기
+			con=DBUtil.getConnect();
+			ptmt=con.prepareStatement(sql.toString());
+			//2.?값 삽입하기
+			ptmt.setString(1, deptno);
+			//3.SQL문 실행하기
+			rs=ptmt.executeQuery(); //select실행
+			//실행결과를 자바객체로 변환
+			// -레코드가 여러 개: DTO로 레코드를 변환하고 Arraylist에 add
+			// -레코드가 한 개: DTO로 레코드 변환
+			while(rs.next()) { //rs.next()가 레코드 검색하는 역할을 해준다.
+				dept = new DeptDTO(rs.getString(1), rs.getString(2), rs.getString(3), 
+						rs.getString(4), rs.getString(5));
+			}
+			//레코드가 한 개인 경우에는 있는지 없는지를 판단해서 있으면 아래와 같이 DeptDTO레코드를 생성해준다.
+/*			if(rs.next()) {
+				dept = new DeptDTO(rs.getString(1), rs.getString(2), rs.getString(3), 
+						rs.getString(4), rs.getString(5));
+			}*/
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.close(rs, ptmt, con);
+		}
+		return dept;
+	}
 }

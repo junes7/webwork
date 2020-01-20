@@ -13,10 +13,11 @@
 		//서블릿이 공유해준 ArrayList<DeptDTO>객체 가져오기
 		ArrayList<DeptDTO> deptlist = (ArrayList<DeptDTO>)request.getAttribute("deptlist");
 		int size = deptlist.size();
+		//서블릿을 거치지 않고 들어오면 어디로 보내줄 지 모르기 때문에 null pointer exception이 발생한다.
+		//500번은 run time 오류이다.
 	%>
 	
-
-	<h1 align='center'>부서 목록 출력</h1>
+	<h1 align='center'>부서 목록 보기~~</h1>
 	<hr/>
 	<table border="1" align="center" width="500px" >
 	<tr>
@@ -28,11 +29,12 @@
 	%>
 	<tr>
 		<td><%= dept.getDeptNo() %></td>
-		<td><%= dept.getDeptName() %></td>
+		<td><a href="/serverweb/dept/read.do?deptNo=<%= dept.getDeptNo() %>&info=한글데이터"><%= dept.getDeptName() %></a>
+		<%-- <td><%= dept.getDeptName() %></td> --%>
 		<td><%= dept.getLoc() %></td>
 		<td><%= dept.getTel() %></td>
 		<td><%= dept.getMgr() %></td>
-		<td><a href="/serverweb/delete.do?deptno=<%= dept.getDeptNo()%>">삭제</a></td>
+		<td><a href="/serverweb/delete.do?deptNo=<%= dept.getDeptNo()%>">삭제</a></td>
 	</tr>
 	<%	}	%>
 	</table>

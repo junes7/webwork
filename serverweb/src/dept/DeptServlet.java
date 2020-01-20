@@ -18,6 +18,7 @@ public class DeptServlet extends HttpServlet {
 		PrintWriter dept = response.getWriter();
 		System.out.println("서블릿");
 		int result = 0;
+		//1.요청정보추출
 		String deptNo = request.getParameter("deptNo");
 		String deptName = request.getParameter("deptName");
 		String loc = request.getParameter("loc");
