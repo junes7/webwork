@@ -9,12 +9,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="image" key="selection"/>
+		<item value="h3" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="h1"/>
 			<item value="image"/>
 			<item value="home"/>
 			<item value="span"/>
@@ -22,6 +23,7 @@
 			<item value="test"/>
 		</list>
 		<list key="replacehistory">
+			<item value="h3"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
